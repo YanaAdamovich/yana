@@ -20,12 +20,6 @@ function handlerFilterTitle (allTitle, value){
     return filterSort;
 }
 
-const getAddToList = function(value:string) {
-  return {
-    type: 'ADD',
-    payload: value
-  }
-};
 
 const requestList= function(value:string){
   return{
@@ -61,4 +55,4 @@ const getAsyncList = function(value: string, dispatch: Dispatch<{}>){
    return promise;
    
 };
-export {getAddToList,getFilterList} 
+export {getFilterList} 
